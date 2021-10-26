@@ -1,5 +1,5 @@
 {
-  "name": "assignment-1",
+  "name": "assignment-2",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -21,17 +21,17 @@
     "jquery": "^3.6.0",
     "morgan": "~1.9.1"
   },
-  "description": "Assignment 1 for COMP229-013",
-  "main": "index.js",
+  "description": "Assignment 2 for COMP229-013",
+  "main": "server.js",
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/marcusngooi/COMP229-013-Assignment-1.git"
+    "url": "git+https://github.com/marcusngooi/COMP229-013-Assignment-2.git"
   },
   "author": "Marcus Ngooi",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/marcusngooi/COMP229-013-Assignment-1/issues"
+    "url": "https://github.com/marcusngooi/COMP229-013-Assignment-2/issues"
   },
-  "homepage": "https://github.com/marcusngooi/COMP229-013-Assignment-1#readme"
+  "homepage": "https://github.com/marcusngooi/COMP229-013-Assignment-2#readme"
 }
