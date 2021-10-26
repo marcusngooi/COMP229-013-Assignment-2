@@ -1,38 +1,89 @@
-<!-- Header -->
-<%- include partials/header.ejs %>
-<!-- Main Nav -->
-<%- include partials/main_nav.ejs %>
-<!-- Common Page Content -->
-<%- include partials/content.ejs %>
+<!-- Partials -->
+<%- include partials/header.ejs %> <%- include partials/main_nav.ejs %> <%-
+include partials/content.ejs %>
 
 <!-- Page Content -->
-<div class='container'>
-    <form action='/home'>
+<div class="container">
+  <form action="/home">
+    <fieldset>
+      <legend>Personal Information</legend>
+      <label class="inputInfoLabel">Address:</label
+      ><label class="inputInfo"
+        >344 Horsham Ave, North York, ON, M2R 1G6, Canada</label
+      ><br />
+      <label class="inputInfoLabel">Phone:</label
+      ><label class="inputInfo">416-707-4903</label><br />
+      <label class="inputInfoLabel">E-Mail:</label
+      ><label class="inputInfo">mngooi@my.centennialcollege.ca</label><br />
+      <label class="inputInfoLabel">LinkedIn:</label
+      ><label class="inputInfo">www.linkedin.com/in/marcusngooi</label><br />
+    </fieldset>
 
-        <fieldset>
-            <legend>Personal Information</legend>
-            <label class="inputInfoLabel">Address:</label><label class="inputInfo">344 Horsham Ave, North York, ON, M2R 1G6, Canada</label><br>
-            <label class="inputInfoLabel">Phone:</label><label class="inputInfo">416-707-4903</label><br>
-            <label class="inputInfoLabel">E-Mail:</label><label class="inputInfo">mngooi@my.centennialcollege.ca</label><br>
-            <label class="inputInfoLabel">LinkedIn:</label><label class="inputInfo">www.linkedin.com/in/marcusngooi</label><br>
-        </fieldset>
+    <fieldset>
+      <legend>Your Contact Information</legend>
+      <label class="inputInfoLabel">First Name:</label
+      ><input
+        class="inputInfo"
+        name="txtFirstName"
+        type="text"
+        required="required"
+        size="25"
+        tabindex="1"
+      /><br />
+      <label class="inputInfoLabel">Last Name:</label
+      ><input
+        class="inputInfo"
+        name="txtLastName"
+        type="text"
+        required="required"
+        size="25"
+        tabindex="3"
+      /><br />
+      <label class="inputInfoLabel">Phone:</label
+      ><input
+        class="inputInfo"
+        name="txtPhone"
+        type="tel"
+        required="required"
+        size="25"
+        tabindex="5"
+      /><br />
+      <label class="inputInfoLabel">Email:</label
+      ><input
+        class="inputInfo"
+        name="txtEmail"
+        type="email"
+        required="required"
+        size="30"
+        tabindex="7"
+      /><br />
+      <label class="inputInfoLabel">Leave a message:</label>
+      <textarea
+        class="inputInfo"
+        cols="50"
+        name="additionalComments"
+        rows="6"
+        tabindex="9"
+      ></textarea
+      ><br />
+    </fieldset>
 
-        <fieldset>
-            <legend>Your Contact Information</legend>
-            <label class="inputInfoLabel">First Name:</label><input class="inputInfo" name="txtFirstName" type="text" required="required" size="25" tabindex="1"><br>
-            <label class="inputInfoLabel">Last Name:</label><input class="inputInfo" name="txtLastName" type="text" required="required" size="25" tabindex="3"><br>
-            <label class="inputInfoLabel">Phone:</label><input class="inputInfo" name="txtPhone" type="tel" required="required" size="25" tabindex="5" /><br>
-            <label class="inputInfoLabel">Email:</label><input class="inputInfo" name="txtEmail" type="email" required="required" size="30" tabindex="7" /><br>
-            <label class="inputInfoLabel">Leave a message:</label>
-            <textarea class="inputInfo" cols="50" name="additionalComments" rows="6" tabindex="9"></textarea><br>
-        </fieldset>
-
-        <fieldset>
-            <legend>Submit</legend>
-            <label><input name="Submit1" tabindex="11" type="submit" value="Send information"></label><input name="Reset1" tabindex="13" type="reset" value="Clear all fields">
-        </fieldset>
-
-    </form>
+    <fieldset>
+      <legend>Submit</legend>
+      <label
+        ><input
+          name="Submit1"
+          tabindex="11"
+          type="submit"
+          value="Send information" /></label
+      ><input
+        name="Reset1"
+        tabindex="13"
+        type="reset"
+        value="Clear all fields"
+      />
+    </fieldset>
+  </form>
 </div>
 
 <!-- Account for Fixed Bottom -->
@@ -41,7 +92,5 @@
 <br />
 <br />
 
-<!-- Bottom Nav -->
-<%- include partials/bottom_nav.ejs %> 
-<!-- Footer -->
-<%- include partials/footer.ejs %> 
+<!-- Partials -->
+<%- include partials/bottom_nav.ejs %> <%- include partials/footer.ejs %>

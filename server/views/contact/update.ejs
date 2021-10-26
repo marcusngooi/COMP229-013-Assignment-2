@@ -2,7 +2,7 @@
 <%- include ../partials/header.ejs %> <%- include ../partials/main_nav.ejs %>
 <%- include ../partials/content.ejs %>
 
-<!-- Content for the Add page -->
+<!-- Content for the Update page -->
 <div class="container">
   <div class="row">
     <div class="offset-md-3 col-md-6">
@@ -17,6 +17,7 @@
             id="nameTextField"
             placeholder="Enter the Contact Name"
             name="contactName"
+            value="<%= contact.contactName %>"
             required
           />
         </div>
@@ -29,6 +30,7 @@
             id="contactNumberTextField"
             placeholder="Enter the Contact Number"
             name="contactNumber"
+            value="<%= contact.contactNumber %>"
             required
           />
         </div>
@@ -41,6 +43,7 @@
             id="emailAddressTextField"
             placeholder="Enter the email address"
             name="emailAddress"
+            value="<%= contact.emailAddress %>"
             required
           />
         </div>
@@ -48,6 +51,10 @@
         <button class="btn btn-primary" type="submit">
           <i class="fas fa-edit"></i> Submit
         </button>
+
+        <a href="/contact-list/delete/<%= contact._id %>" class="btn btn-danger"
+          ><i class="fas fa-trash"></i> Delete</a
+        >
 
         <a href="/contact-list" class="btn btn-warning"
           ><i class="fas fa-undo"></i> Cancel</a

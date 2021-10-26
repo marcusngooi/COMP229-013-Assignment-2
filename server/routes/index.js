@@ -1,3 +1,11 @@
+/*  COMP229-013 F2021
+    Assignment 2
+    File Name:  routes/index.js
+    Student#:   301147411
+    Name:       Marcus Ngooi
+    Date:       October 26, 2021
+ */
+
 // require modules
 let express = require("express");
 let router = express.Router();

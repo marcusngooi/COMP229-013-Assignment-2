@@ -1,8 +1,5 @@
-<!-- Header -->
-<%- include ../partials/header.ejs %>
-<!-- Main Nav -->
-<%- include ../partials/main_nav.ejs %>
-<!-- Common Page Content -->
+<!-- Partials -->
+<%- include ../partials/header.ejs %> <%- include ../partials/main_nav.ejs %>
 <%- include ../partials/content.ejs %>
 
 <!-- Main Content -->
@@ -48,10 +45,10 @@
           </td>
           <td class="text-center col-1">
             <a
-              href="/contact-list/edit/<%= ContactList[count]._id %>"
+              href="/contact-list/update/<%= ContactList[count]._id %>"
               class="btn btn-primary"
             >
-              <i class="fas fa-pencil-alt"></i> Edit</a
+              <i class="fas fa-pencil-alt"></i> Update</a
             >
           </td>
           <td class="text-center col-1">
@@ -85,7 +82,5 @@
 <br />
 <br />
 <br />
-<!-- Bottom Nav -->
-<%- include ../partials/bottom_nav.ejs %>
-<!-- Footer -->
-<%- include ../partials/footer.ejs %>
+<!-- Partials -->
+<%- include ../partials/bottom_nav.ejs %> <%- include ../partials/footer.ejs %>

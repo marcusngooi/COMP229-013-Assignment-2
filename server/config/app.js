@@ -1,3 +1,11 @@
+/*  COMP229-013 F2021
+    Assignment 2
+    File Name:  config/app.js
+    Student#:   301147411
+    Name:       Marcus Ngooi
+    Date:       October 26, 2021
+ */
+
 // require modules
 let createError = require("http-errors");
 let express = require("express");
@@ -75,7 +83,7 @@ passport.deserializeUser(User.deserializeUser());
 // routing
 app.use("/", indexRouter);
 app.use("/users", usersRouter);
-app.use("contact-list", contactsRouter);
+app.use("/contact-list", contactsRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
