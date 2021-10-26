@@ -8,5 +8,5 @@
 
 // specify URI for database
 module.exports = {
-  URI: "mongodb://localhost/business_contacts",
+  URI: "mongodb+srv://marcus:GDi5DNYEQW3VHQqn@mongodbserver.4wvr0.mongodb.net/business_contacts?retryWrites=true&w=majority",
 };
