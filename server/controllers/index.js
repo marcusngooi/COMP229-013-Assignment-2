@@ -16,6 +16,7 @@ let passport = require("passport");
 let userModel = require("../models/user");
 let User = userModel.User; // alias
 
+// logic
 module.exports.displayHomePage = (req, res, next) => {
   res.render("home", {
     title: "Home",

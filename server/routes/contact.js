@@ -24,7 +24,6 @@ function requireAuth(req, res, next) {
     next(); // goes to next call
 }
 
-// define CRUD operations for routing
 // GET Route for the Business Contact List page - READ operation
 router.get("/", requireAuth, contactController.displayContactList);
 

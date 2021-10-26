@@ -6,6 +6,7 @@
     Date:       October 26, 2021
  */
 
+// specify URI for database
 module.exports = {
   URI: "mongodb://localhost/business_contacts",
 };
