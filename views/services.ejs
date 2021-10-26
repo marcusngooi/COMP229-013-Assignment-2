@@ -1,0 +1,47 @@
+<!-- Header -->
+<%- include partials/header.ejs %>
+<!-- Main Nav -->
+<%- include partials/main_nav.ejs %>
+<!-- Common Page Content -->
+<%- include partials/content.ejs %>
+
+<!-- Page Content -->
+<!-- Using bootstrap card component to list services-->
+<div class='container'>
+    <p>I offer the following services:
+      <div class="card" style="width: 18rem;">
+          <img src="/Assets/images/gameprogramming.jpeg" class="card-img-top" alt="Main Menu of Detechtive Noir game">
+          <div class="card-body">
+            <h5 class="card-title">Game Programming</h5>
+            <p class="card-text">C#, Unity, Blender, GIMP, WebGL, Git</p>
+          </div>
+      </div>
+      <br />
+      <div class="card" style="width: 18rem;">
+        <img src="/Assets/images/generalprogramming.jpg" class="card-img-top" alt="Pong Plus">
+        <div class="card-body">
+          <h5 class="card-title">General Programming</h5>
+          <p class="card-text">C#, Java, Python, UNIX/Linux, Git</p>
+        </div>
+      </div>
+      <br />
+        <div class="card" style="width: 18rem;">
+          <img src="/Assets/images/webdev.png" class="card-img-top" alt="Origin's Fall">
+          <div class="card-body">
+            <h5 class="card-title">Web Development</h5>
+            <p class="card-text">HTML, CSS, JavaScript, MEAN Stack, Git</p>
+          </div>
+        </div>
+    </p>
+</div>
+
+<!-- Account for Fixed Bottom -->
+<br />
+<br />
+<br />
+<br />
+
+<!-- Bottom Nav -->
+<%- include partials/bottom_nav.ejs %> 
+<!-- Footer -->
+<%- include partials/footer.ejs %> 
